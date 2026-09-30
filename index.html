@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Parabolinhas: 151 historinhas cristãs pra educar sem gritar</title>
- <meta name="description" content="151 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$12,90 no Pix. Acesso imediato." />
+ <title>Parabolinhas: 150 historinhas cristãs pra educar sem gritar</title>
+ <meta name="description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$14,90 no Pix. Acesso imediato." />
  <!-- OG -->
- <meta property="og:title" content="Parabolinhas 151 historinhas cristãs pra educar sem gritar" />
- <meta property="og:description" content="151 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$12,90 no Pix." />
+ <meta property="og:title" content="Parabolinhas 150 historinhas cristãs pra educar sem gritar" />
+ <meta property="og:description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$14,90 no Pix." />
  <meta property="og:image" content="assets/img/birra.webp" />
  <meta property="og:type" content="website" />
  <!-- COLE AQUI O SCRIPT DO PIXEL / UTMIFY -->
@@ -68,15 +68,14 @@
    min-height: 56px;
    padding: 14px 28px;
    border-radius: 999px;
-   font-familyfont-family: 'Fredoka', sans-serif;
+   font-family: 'Fredoka', sans-serif;
    font-size: 1.05rem;
    font-weight: 600;
    cursor: pointer;
    border: none;
    transition: background 0.2s, transform 0.1s;
    text-decoration: none;
-   width: 100%;
-   text-align: center;
+   width: 100%; max-width: 360px; margin: 0 auto; text-align: center;
   }
   .btn-primary {
    background: #3F8F5B;
@@ -103,7 +102,7 @@
    .btn { width: auto; min-width: 260px; }
   }
 
-  .cta-wrap { margin-top: 32px; display: flex; justify-content: center; }
+  .cta-wrap { margin-top: 32px; text-align: center; display: block; width: 100%; clear: both; }
   .lock-text { text-align: center; margin-top: 8px; font-size: 0.85rem; opacity: 0.7; }
 
   /* ===== MARQUEE ===== */
@@ -130,14 +129,13 @@
 
   #hero {
    background: #FFF6E6;
-   padding-top: 0;
-   overflow: hidden; /* contém a esteira sem criar scroll */
+   padding-top: 0; padding-bottom: 0; overflow: hidden; /* contém a esteira sem criar scroll */
   }
   .hero-inner {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 48px 0 56px;
+   padding: 48px 0 32px;
   }
   .hero-text {
    max-width: 560px;
@@ -182,7 +180,7 @@
    transition: transform 0.25s, box-shadow 0.25s;
   }
   .belt-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 12px 28px rgba(74,46,31,0.32); }
-  .belt-card img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .belt-card img { width: 100%; height: 100%; object-fit: cover; object-position: top; transform: scale(1.08); }
 
   @media (min-width: 768px) {
    .hero-inner { padding: 64px 0 72px; }
@@ -191,6 +189,7 @@
   }
 
   /* ===== INTRO ===== */
+  #intro { padding-top: 24px; }
   #intro .container { max-width: 680px; text-align: center; }
   #intro h2 { margin-bottom: 20px; }
   #intro p { font-size: 1.05rem; }
@@ -299,6 +298,7 @@
    max-height: 88vh;
    border-radius: 16px;
    object-fit: contain;
+   clip-path: inset(4.5% round 16px);
   }
   #lightbox .lb-close {
    position: absolute;
@@ -311,82 +311,65 @@
    line-height: 1;
   }
 
-  /* ===== CATALOG / TABS ===== */
-  #catalog { background: #FDEBD0; }
-  #catalog h2 { margin-bottom: 6px; }
-  #catalog .sub-text { text-align: center; margin-bottom: 28px; color: #7A4A2A; }
-
+      /* ===== CATALOG / TABS ===== */
   .tabs-bar {
    display: flex;
    gap: 8px;
-   flex-wrap: wrap;
-   padding-bottom: 8px;
-   margin-bottom: 28px;
+   overflow-x: auto;
+   padding-bottom: 12px;
+   margin: 24px 0 16px;
+   scrollbar-width: none;
+   -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+   mask-image: linear-gradient(to right, #000 85%, transparent 100%);
   }
-  @media (max-width: 767px) {
-   .tabs-bar {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-    mask-image: linear-gradient(to right, black 80%, transparent 100%);
-   }
-   .tabs-bar::-webkit-scrollbar { display: none; }
+  @media (min-width: 768px) {
+   .tabs-bar { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
   }
+  .tabs-bar::-webkit-scrollbar { display: none; }
   .tab-chip {
-   flex-shrink: 0;
-   padding: 7px 16px;
-   border-radius: 24px;
-   border: 2px solid #7A4A2A;
    background: transparent;
+   border: 1px solid #7A4A2A;
    color: #7A4A2A;
+   padding: 8px 16px;
+   border-radius: 999px;
    font-family: 'Fredoka', sans-serif;
    font-weight: 600;
-   font-size: 0.88rem;
-   cursor: pointer;
-   transition: background 0.18s, color 0.18s;
+   font-size: 0.9rem;
    white-space: nowrap;
+   cursor: pointer;
+   transition: all 0.2s;
   }
-  .tab-chip.active, .tab-chip:hover { background: #7A4A2A; color: #FFF6E6; }
-
-  .tab-panel { display: none; }
+  .tab-chip.active {
+   background: #7A4A2A;
+   color: #FFF6E6;
+  }
+  .tab-panel {
+   display: none;
+   animation: fadeIn 0.3s ease;
+  }
   .tab-panel.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
   /* Story list */
   .story-list {
    list-style: none;
    display: flex;
    flex-direction: column;
-   gap: 6px;
+   gap: 8px;
+   margin-bottom: 24px;
   }
   .story-list li {
-   padding: 8px 12px;
-   background: #FFF6E6;
-   border-radius: 10px;
+   padding: 12px 16px;
+   background: #FFFDF8;
+   border: 1px solid #E9DCC6;
+   border-radius: 12px;
    font-size: 0.95rem;
-  }
-  .story-list li::before { content: "📖 "; }
-
-  .stories-hidden { display: none; }
-
-  #expand-btn {
-   background: none;
-   border: none;
    color: #7A4A2A;
-   font-weight: 700;
-   font-size: 0.95rem;
-   cursor: pointer;
-   margin-top: 12px;
-   padding: 4px 0;
+   display: flex;
+   align-items: flex-start;
+   gap: 8px;
   }
-
-  .more-text {
-   margin-top: 24px;
-   font-style: italic;
-   text-align: center;
-   color: #7A4A2A;
-  }
-
+  .story-list li::before { content: "📖"; flex-shrink: 0; }
 
   /* ===== BONUS ===== */
   #bonus { background: #FFF6E6; }
@@ -474,6 +457,7 @@
    box-shadow: 0 4px 18px rgba(74,46,31,0.10);
    position: relative;
   }
+  .plan-card .btn { width: 100%; display: flex; justify-content: center; align-items: center; }
   .plan-card.featured {
    border: 3px solid #3F8F5B;
    background: #FFF6E6;
@@ -518,24 +502,13 @@
   @media (min-width: 600px) {
    .garantia-inner { flex-direction: row; text-align: left; }
   }
-  .guarantee-seal {
+  .guarantee-seal-img {
    flex-shrink: 0;
-   width: 130px;
-   height: 130px;
-   border-radius: 50%;
-   border: 4px solid #3F8F5B;
-   background: #FFF6E6;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-family: 'Fredoka', sans-serif;
-   color: #3F8F5B;
-   line-height: 1.1;
-   padding: 12px;
+   width: 150px;
+   height: auto;
+   object-fit: contain;
+   mix-blend-mode: multiply; /* removes white background if the image has any */
   }
-  .guarantee-seal .big { font-size: 2.2rem; font-weight: 700; }
-  .guarantee-seal .small { font-size: 0.75rem; text-align: center; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
   .garantia-text h2 { text-align: left; }
 
   /* ===== FAQ ===== */
@@ -683,9 +656,9 @@
 <!-- ==================== MARQUEE ==================== -->
 <div class="marquee-outer" aria-hidden="true">
  <div class="marquee-track">
-  <span>151 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • LER NO CELULAR OU IMPRIMIR • ACESSO IMEDIATO • PAGAMENTO ÚNICO • A PARTIR DE R$12,90 NO PIX •</span>
-  <span>151 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • LER NO CELULAR OU IMPRIMIR • ACESSO IMEDIATO • PAGAMENTO ÚNICO • A PARTIR DE R$12,90 NO PIX •</span>
-  <span>151 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • LER NO CELULAR OU IMPRIMIR • ACESSO IMEDIATO • PAGAMENTO ÚNICO • A PARTIR DE R$12,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
  </div>
 </div>
 
@@ -694,8 +667,9 @@
  <div class="container">
   <div class="hero-inner">
    <div class="hero-text">
-    <h1>Parabolinhas: 151 Historinhas Cristãs pra Educar Sem Gritar 📖</h1>
-    <p class="sub">Seu filho faz birra, desobedece, não quer dividir? Tem uma historinha pra isso.</p>
+        <div class="hero-tag" style="background: #F7E6D6; color: #B8683F; font-weight: 600; font-size: 13px; text-align: center; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 16px;">✝️ Pra mães, avós, tias e professoras</div>
+    <h1>Ensine a Palavra de Deus do jeito que criança entende: com historinhas 📖</h1>
+    <p class="sub">São 150 historinhas cristãs curtinhas, cada uma com um versículo e uma lição do dia. Obedecer, partilhar, perdoar, falar a verdade… um valor por história, em 2 minutos.</p>
    </div>
 
    <!-- ESTEIRA automática: aparece entre subheadline e botão -->
@@ -766,11 +740,12 @@
     </div>
    </div>
 
-   <!-- CTA fica ABAIXO da esteira -->
+      <!-- CTA fica ABAIXO da esteira -->
    <div class="hero-text" style="padding-top:0;">
     <div class="cta-wrap">
-     <a href="#planos" class="btn btn-primary btn-pulse" id="hero-cta">📖 Quero minhas Parabolinhas →</a>
+     <a href="#planos" class="btn btn-primary btn-pulse" id="hero-cta">Quero as 150 historinhas</a>
     </div>
+    <p style="font-size: 13px; color: #6B5446; text-align: center; margin-top: 12px;">A partir de R$14,90 &middot; pagamento único &middot; chega no seu e-mail na hora</p>
    </div>
   </div>
  </div>
@@ -779,13 +754,11 @@
 <!-- ==================== INTRO ==================== -->
 <section id="intro">
  <div class="container">
-  <h2>A criança não aprende com sermão. Aprende com história.</h2>
-  <p style="margin-top:24px;">
-   Foi assim que Jesus ensinou por parábolas. As Parabolinhas são historinhas curtas e ilustradas, onde bichinhos e objetos passam pelas mesmas situações que o seu filho: a birra, o medo do escuro, a mentira, o ciúme do irmão. No final, a criança descobre sozinha o caminho certo e você fecha com um versículo. Em 2 minutos, sem precisar levantar a voz.
-  </p>
-  <div style="text-align:center; margin-top: 16px;"><span class="price-tag">A partir de R$12,90 no Pix</span></div>
+  <h2>Criança não guarda sermão. Guarda história.</h2>
+  <p style="margin-top:24px;">Foi assim que Jesus ensinava: por parábolas. As Parabolinhas fazem o mesmo, do tamanho de uma criança.</p><p style="margin-top:16px;">Em cada historinha, um bichinho passa por uma situação do dia a dia (dividir o brinquedo, falar a verdade, ter coragem no escuro) e descobre sozinho o caminho certo. No final vem um versículo e uma frase simples que a criança lembra e repete.</p><p style="margin-top:16px;">É só ler. Em 2 minutos a lição está dada, no colo antes de dormir ou na rodinha da escolinha.</p>
+  <div style="text-align:center; margin-top: 16px;"><span class="price-tag">A partir de R$14,90 no Pix</span></div>
   <div class="cta-wrap">
-   <a href="#planos" class="btn btn-primary">Quero minhas Parabolinhas →</a>
+   <a href="#planos" class="btn btn-primary">Quero as Parabolinhas</a>
   </div>
  </div>
 </section>
@@ -798,13 +771,13 @@
   <div class="grid-6">
    <div class="feature-card">
     <div class="emoji">📖</div>
-    <h3>151 Historinhas</h3>
-    <p>Uma pra cada comportamento do seu filho</p>
+    <h3>150 Historinhas</h3>
+    <p>Um valor cristão em cada uma: obedecer, partilhar, perdoar, agradecer…</p>
    </div>
    <div class="feature-card">
     <div class="emoji">✝️</div>
     <h3>Versículo em Cada Uma</h3>
-    <p>A Palavra de Deus ligada à situação</p>
+    <p>A Palavra de Deus ligada à lição da história</p>
    </div>
    <div class="feature-card">
     <div class="emoji">💡</div>
@@ -813,21 +786,23 @@
    </div>
    <div class="feature-card">
     <div class="emoji">📱</div>
-    <h3>Lê no Celular</h3>
-    <p>Ou imprime em casa quantas vezes quiser</p>
+    <h3>Celular ou Impresso</h3>
+    <p>Pra usar em casa, na sala da escolinha ou na igreja</p>
    </div>
    <div class="feature-card">
     <div class="emoji">📩</div>
-    <h3>Envio por E-mail</h3>
-    <p>Chega logo após a confirmação do pagamento</p>
+    <h3>Chega no E-mail</h3>
+    <p>Logo após a confirmação do pagamento</p>
    </div>
    <div class="feature-card">
     <div class="emoji">♾️</div>
     <h3>Pagamento Único</h3>
-    <p>Sem mensalidade, o material é seu pra sempre</p></div>
+    <p>Sem mensalidade. É seu pra sempre</p>
+   </div>
+  </div>
 
   <div class="cta-wrap">
-   <a href="#planos" class="btn btn-primary">Quero meu acesso →</a>
+   <a href="#planos" class="btn btn-primary">Quero meu acesso</a>
   </div>
  </div>
 </section>
@@ -844,194 +819,121 @@
   <h2>Tem historinha pra cada situação</h2>
   <p class="sub-text" style="margin-top:12px;">Escolha o comportamento e veja algumas das historinhas:</p>
 
-  <div class="tabs-bar" role="tablist">
-   <button class="tab-chip active" role="tab" aria-selected="true" data-tab="todos">Todos</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="birra">Birra e raiva</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="medo">Medo</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="desobediencia">Desobediência</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="mentira">Mentira</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="dividir">Não quer dividir</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="ciume">Ciúme</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="tela">Tela e celular</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="vergonha">Vergonha</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="esperar">Não sabe esperar</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="perder">Não sabe perder</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="compara">Se compara</button>
-   <button class="tab-chip" role="tab" aria-selected="false" data-tab="mandao">Mandão e orgulho</button>
+      <div class="tabs-bar" role="tablist">
+   <button class="tab-chip active" role="tab" data-tab="todos">Todos</button>
+   <button class="tab-chip" role="tab" data-tab="birra">Birra e raiva</button>
+   <button class="tab-chip" role="tab" data-tab="medo">Medo</button>
+   <button class="tab-chip" role="tab" data-tab="desobediencia">Desobediência</button>
+   <button class="tab-chip" role="tab" data-tab="mentira">Mentira</button>
+   <button class="tab-chip" role="tab" data-tab="dividir">Não quer dividir</button>
+   <button class="tab-chip" role="tab" data-tab="ciume">Ciúme</button>
+   <button class="tab-chip" role="tab" data-tab="tela">Tela e celular</button>
   </div>
 
-  <!-- TAB: TODOS -->
-  <div class="tab-panel active" id="tab-todos">
-   <ul class="story-list" id="todos-visible">
+    <div class="tab-panel active" id="tab-todos">
+   <ul class="story-list">
     <li>A Raposinha Que Sempre Fazia Birra</li>
+    <li>O Macaquinho Que Só Queria Telinha</li>
     <li>O Crocodilo Que Não Sabia Se Acalmar</li>
     <li>O Elefantinho Que Tinha Medo de Dormir</li>
-    <li>O Ouvido que Não Gostava de Ouvir</li>
-    <li>A Raposinha Que Inventava Histórias</li>
     <li>O Coelhinho Que Não Sabia Dividir</li>
-    <li>O Gatinho Que Tinha Ciúmes</li>
-    <li>O Macaquinho Que Só Queria Telinha</li>
-    <li>O Controle Quebrou</li>
    </ul>
-   <ul class="story-list stories-hidden" id="todos-hidden">
-    <li>A Mochila Pesada</li>
+   <ul class="story-list" id="todos-hidden" style="display: none; margin-top: -16px;">
+    <li>A Raposinha Que Inventava Histórias</li>
+    <li>O Ouvido que Não Gostava de Ouvir</li>
+    <li>O Gatinho Que Tinha Ciúmes do Irmão</li>
+    <li>O Ursinho Que Temia o Escuro</li>
+    <li>A Ovelhinha Que Saiu do Caminho</li>
+    <li>O Leãozinho Que Rugia à Toa</li>
+    <li>O Esquilo Que Escondia Suas Nozes</li>
     <li>O Javalizinho Que Ficava Furioso Rápido</li>
-    <li>O Texuguinho Que Gritava Sem Pensar</li>
-    <li>O Jacaré Que Se Irritava Fácil</li>
-    <li>O Ursinho Que Tinha Medo de Ficar Sozinho</li>
-    <li>A Meia Que Tinha Medo de Errar</li>
-    <li>O Guarda-Chuvinha Medroso</li>
-    <li>O Pássaro Que Tinha Medo de Voar</li>
-    <li>O Canguruzinho Que Pulava Sem Parar</li>
-    <li>A Flecha que Voltou</li>
-    <li>A Bola Que Fugiu</li>
-    <li>A Lagartixa Teimosa</li>
-    <li>O Gatinho Que Fugiu do Banho</li>
-    <li>O Sabão da Mentira</li>
-    <li>O Doce Que Pesou no Bolso</li>
-    <li>O Urso Que Não Queria Dividir</li>
-    <li>O Urso da Discórdia</li>
-    <li>O Coelhinho Que Dividiu Sua Toca</li>
-    <li>O Pavãozinho Que Queria Toda a Atenção</li>
-    <li>O Patinho Que Se Sentia Esquecido</li>
-    <li>A Corujinha Que Tinha Vergonha de Falar</li>
-    <li>O Pinguim Que Tinha Vergonha de Falar</li>
-    <li>A Cobrazinha Que Morria de Vergonha</li>
-    <li>O Porquinho Que Tinha Vergonha de Errar</li>
-    <li>O Leãozinho Que Não Sabia Esperar</li>
-    <li>A Raposinha Que Não Sabia Esperar</li>
-    <li>O Jabuti Que Não Tinha Pressa</li>
-    <li>O Relógio Que Queria Acelerar Tudo</li>
-    <li>O Golfinho Que Não Sabia Perder</li>
-    <li>A Lontrinha Que Não Sabia Perder</li>
-    <li>O Ursinho Que Não Gostava de Perder</li>
-    <li>A Capivarinha Que Queria Ser Igual a Todo Mundo</li>
-    <li>A Vaquinha Que Se Comparava</li>
-    <li>A Girafinha Que Queria Se Esconder</li>
-    <li>O Cacto Que Não Se Achava Bonito</li>
-    <li>O Porquinho Que Queria Mandar em Tudo</li>
-    <li>A Raposinha Mandona</li>
-    <li>O Lobinho Orgulhoso</li>
-    <li>A Formiguinha Que Não Sabia Pedir Ajuda</li>
+    <li>O Pintinho Que Tinha Medo da Tempestade</li>
+    <li>O Papagaio Que Aumentava Tudo</li>
+    <li>A Joaninha Que Aprendeu a Agradecer</li>
+    <li>O Lobinho Que Escondeu a Verdade</li>
+    <li>O Pinguim Que Não Brincava Mais na Neve</li>
+    <li>A Abelhinha Que Não Partilhava o Mel</li>
+    <li>O Cachorrinho Que Não Emprestava a Bola</li>
    </ul>
-   <button id="expand-btn" aria-expanded="false" onclick="toggleExpand()">Ver todos ▼</button>
-   <p class="more-text">…e mais de 100 outras historinhas: bagunça, reclamação, gratidão, falar demais, amizade, perdão e muito mais.</p>
+   <div style="text-align: center; margin-bottom: 24px;">
+    <button id="expand-btn" aria-expanded="false" onclick="toggleExpand()" style="display: block; margin: 0 auto; text-align: center; width: 100%; background: none; border: none; color: #B8683F; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1rem; cursor: pointer;">Ver todas ▼</button>
+   </div>
   </div>
 
-  <!-- TAB: BIRRA -->
   <div class="tab-panel" id="tab-birra">
    <ul class="story-list">
-     <li>A Raposinha Que Sempre Fazia Birra</li>
-     <li>O Crocodilo Que Não Sabia Se Acalmar</li>
-     <li>O Javalizinho Que Ficava Furioso Rápido</li>
-     <li>O Texuguinho Que Gritava Sem Pensar</li>
-     <li>O Jacaré Que Se Irritava Fácil</li>
-    </ul></div>
+    <li>A Raposinha Que Sempre Fazia Birra</li>
+    <li>O Crocodilo Que Não Sabia Se Acalmar</li>
+    <li>O Javalizinho Que Ficava Furioso Rápido</li>
+    <li>O Leãozinho Que Rugia à Toa</li>
+    <li>O Porco-Espinho Que Fechava a Cara</li>
+    <li>O Texuguinho Que Gritava Sem Pensar</li>
+   </ul>
+  </div>
 
-  <!-- TAB: MEDO -->
   <div class="tab-panel" id="tab-medo">
    <ul class="story-list">
-     <li>O Elefantinho Que Tinha Medo de Dormir</li>
-     <li>O Ursinho Que Tinha Medo de Ficar Sozinho</li>
-     <li>A Meia Que Tinha Medo de Errar</li>
-     <li>O Guarda-Chuvinha Medroso</li>
-     <li>O Pássaro Que Tinha Medo de Voar</li>
-    </ul></div>
+    <li>O Elefantinho Que Tinha Medo de Dormir</li>
+    <li>O Ursinho Que Temia o Escuro</li>
+    <li>O Pintinho Que Tinha Medo da Tempestade</li>
+    <li>A Girafinha Que Tinha Medo de Altura</li>
+    <li>O Cachorrinho Que Se Assustava com Barulhos</li>
+   </ul>
+  </div>
 
-  <!-- TAB: DESOBEDIÊNCIA -->
   <div class="tab-panel" id="tab-desobediencia">
    <ul class="story-list">
-     <li>O Ouvido que Não Gostava de Ouvir</li>
-     <li>O Canguruzinho Que Pulava Sem Parar</li>
-     <li>A Flecha que Voltou</li>
-     <li>A Bola Que Fugiu</li>
-     <li>A Lagartixa Teimosa</li>
-     <li>O Gatinho Que Fugiu do Banho</li>
-    </ul></div>
+    <li>O Macaquinho Que Não Escutava a Mamãe</li>
+    <li>O Ouvido que Não Gostava de Ouvir</li>
+    <li>O Coelhinho Que Fugia de Casa</li>
+    <li>A Ovelhinha Que Saiu do Caminho</li>
+    <li>O Gatinho Que Subiu Onde Não Devia</li>
+    <li>O Bezerrinho Que Ignorou a Cerca</li>
+   </ul>
+  </div>
 
-  <!-- TAB: MENTIRA -->
   <div class="tab-panel" id="tab-mentira">
    <ul class="story-list">
-     <li>A Raposinha Que Inventava Histórias</li>
-     <li>O Sabão da Mentira</li>
-     <li>O Doce Que Pesou no Bolso</li>
-    </ul></div>
+    <li>A Raposinha Que Inventava Histórias</li>
+    <li>O Papagaio Que Aumentava Tudo</li>
+    <li>O Lobinho Que Escondeu a Verdade</li>
+    <li>O Patinho Que Culpou o Irmão</li>
+    <li>A Corujinha Que Mentiu por Medo</li>
+   </ul>
+  </div>
 
-  <!-- TAB: DIVIDIR -->
   <div class="tab-panel" id="tab-dividir">
    <ul class="story-list">
-     <li>O Coelhinho Que Não Sabia Dividir</li>
-     <li>O Urso Que Não Queria Dividir</li>
-     <li>O Urso da Discórdia</li>
-     <li>O Coelhinho Que Dividiu Sua Toca</li>
-    </ul></div>
+    <li>O Coelhinho Que Não Sabia Dividir</li>
+    <li>O Esquilo Que Escondia Suas Nozes</li>
+    <li>O Ratinho Que Queria Tudo Só Pra Ele</li>
+    <li>A Abelhinha Que Não Partilhava o Mel</li>
+    <li>O Cachorrinho Que Não Emprestava a Bola</li>
+   </ul>
+  </div>
 
-  <!-- TAB: CIUME -->
   <div class="tab-panel" id="tab-ciume">
    <ul class="story-list">
-     <li>O Gatinho Que Tinha Ciúmes</li>
-     <li>O Pavãozinho Que Queria Toda a Atenção</li>
-     <li>O Patinho Que Se Sentia Esquecido</li>
-    </ul></div>
+    <li>O Gatinho Que Tinha Ciúmes do Irmão</li>
+    <li>O Passarinho Que Queria a Atenção Só Pra Ele</li>
+    <li>A Ursinha Que Ficou Triste com a Nova Irmãzinha</li>
+    <li>O Cavalinho Que Queria Ser o Preferido</li>
+    <li>A Cachorrinha Que Escondeu o Brinquedo do Irmão</li>
+   </ul>
+  </div>
 
-  <!-- TAB: TELA -->
   <div class="tab-panel" id="tab-tela">
    <ul class="story-list">
-     <li>O Macaquinho Que Só Queria Telinha</li>
-     <li>O Controle Quebrou</li>
-    </ul></div>
-
-  <!-- TAB: VERGONHA -->
-  <div class="tab-panel" id="tab-vergonha">
-   <ul class="story-list">
-    <li>A Corujinha Que Tinha Vergonha de Falar</li>
-    <li>O Pinguim Que Tinha Vergonha de Falar</li>
-    <li>A Cobrazinha Que Morria de Vergonha</li>
-    <li>O Porquinho Que Tinha Vergonha de Errar</li>
+    <li>O Macaquinho Que Só Queria Telinha</li>
+    <li>O Controle Quebrou</li>
+    <li>O Pinguim Que Não Brincava Mais na Neve</li>
+    <li>A Tartaruguinha Que Esqueceu do Parquinho</li>
+    <li>O Guaxinim Que Dormia com o Celular</li>
    </ul>
   </div>
 
-  <!-- TAB: ESPERAR -->
-  <div class="tab-panel" id="tab-esperar">
-   <ul class="story-list">
-    <li>O Leãozinho Que Não Sabia Esperar</li>
-    <li>A Raposinha Que Não Sabia Esperar</li>
-    <li>O Jabuti Que Não Tinha Pressa</li>
-    <li>O Relógio Que Queria Acelerar Tudo</li>
-   </ul>
-  </div>
-
-  <!-- TAB: PERDER -->
-  <div class="tab-panel" id="tab-perder">
-   <ul class="story-list">
-    <li>O Golfinho Que Não Sabia Perder</li>
-    <li>A Lontrinha Que Não Sabia Perder</li>
-    <li>O Ursinho Que Não Gostava de Perder</li>
-   </ul>
-  </div>
-
-  <!-- TAB: COMPARA -->
-  <div class="tab-panel" id="tab-compara">
-   <ul class="story-list">
-    <li>A Capivarinha Que Queria Ser Igual a Todo Mundo</li>
-    <li>A Vaquinha Que Se Comparava</li>
-    <li>A Girafinha Que Queria Se Esconder</li>
-    <li>O Cacto Que Não Se Achava Bonito</li>
-   </ul>
-  </div>
-
-  <!-- TAB: MANDAO -->
-  <div class="tab-panel" id="tab-mandao">
-   <ul class="story-list">
-    <li>O Porquinho Que Queria Mandar em Tudo</li>
-    <li>A Raposinha Mandona</li>
-    <li>O Lobinho Orgulhoso</li>
-    <li>A Formiguinha Que Não Sabia Pedir Ajuda</li>
-   </ul>
-  </div>
-
-  <div class="cta-wrap" style="margin-top:36px;">
-   <a href="#planos" class="btn btn-primary">Quero garantir as minhas agora →</a>
+  <div class="cta-wrap">
+   <a href="#planos" class="btn btn-primary">Quero garantir as minhas agora</a>
   </div>
  </div>
 </section>
@@ -1044,7 +946,7 @@
    <div class="bonus-card">
     <span class="bonus-seal">BÔNUS 01</span>
     <h3>Guia "Qual historinha ler hoje?"</h3>
-    <p>Todas as 151 historinhas organizadas por comportamento. Seu filho fez birra? Abre o guia e acha a história certa em segundos.</p>
+    <p>Todas as 150 historinhas organizadas por comportamento. Seu filho fez birra? Abre o guia e acha a história certa em segundos.</p>
     <span class="bonus-tag">Grátis no Completo</span>
    </div>
    <div class="bonus-card">
@@ -1061,7 +963,7 @@
    </div>
   </div>
   <div class="cta-wrap">
-   <a href="#planos" class="btn btn-primary btn-pulse">Quero tudo isso agora →</a>
+   <a href="#planos" class="btn btn-primary btn-pulse">Quero tudo isso agora</a>
   </div>
  </div>
 </section>
@@ -1100,7 +1002,7 @@
    <!-- BÁSICO -->
    <div class="plan-card">
     <div class="plan-name">PARABOLINHAS BÁSICO</div>
-    <div class="plan-price"><span>R$</span> 12,90</div>
+    <div class="plan-price"><span>R$</span> 14,90</div>
     <ul class="plan-features">
      <li>35 historinhas cristãs</li>
      <li>Versículo + Lição do Dia</li>
@@ -1117,7 +1019,7 @@
     <div class="plan-name">PARABOLINHAS COMPLETO</div>
     <div class="plan-price"><span>R$</span> 29,90</div>
     <ul class="plan-features">
-     <li>Todas as 151 historinhas cristãs</li>
+     <li>Todas as 150 historinhas cristãs</li>
      <li>Versículo + Lição do Dia</li>
      <li>Historinhas com Missão Kids e Oração</li>
      <li>Acesso Imediato</li>
@@ -1129,7 +1031,7 @@
      <li>Cards de Versículos pra Decorar</li>
      <li>Quadro de Recompensas Cristão</li>
     </ul>
-    <a href="{{LINK_COMPLETO}}" class="btn btn-primary btn-pulse" id="btn-completo">📖 Quero tudo →</a>
+    <a href="{{LINK_COMPLETO}}" class="btn btn-primary btn-pulse" id="btn-completo">📖 Quero tudo</a>
     <p class="micro">São 116 historinhas a mais + 3 bônus por só R$17 de diferença.</p>
     <p class="lock-text">🔒 Compra segura</p>
    </div>
@@ -1142,14 +1044,11 @@
 <section id="garantia">
  <div class="container">
   <div class="garantia-inner">
-   <div class="guarantee-seal" aria-label="Garantia de 7 dias">
-    <span class="big">7</span>
-    <span class="small">DIAS DE<br>GARANTIA</span>
-   </div>
+   <img src="assets/img/selo-garantia.png" alt="Garantia de 30 Dias" class="guarantee-seal-img" />
    <div class="garantia-text">
-    <h2 style="text-align:left;">Garantia de 7 dias</h2>
+    <h2 style="text-align:left;">Garantia de 30 dias</h2>
     <p style="margin-top:14px;">
-     Temos total confiança nas Parabolinhas. Se por qualquer motivo você não gostar, é só chamar no WhatsApp ou mandar um e-mail em até 7 dias que devolvemos 100% do seu dinheiro, sem perguntas!
+     Temos total confiança nas Parabolinhas. Se por qualquer motivo você não gostar, é só chamar no WhatsApp ou mandar um e-mail em até 30 dias que devolvemos 100% do seu dinheiro, sem perguntas!
     </p>
    </div>
   </div>
@@ -1203,7 +1102,7 @@
      Tem mensalidade? <span class="faq-icon" aria-hidden="true">+</span>
     </button>
     <div class="faq-a">
-     Não! Você escolhe entre o Básico (R$ 12,90) ou o Completo (R$ 29,90), paga uma única vez e o material é seu pra sempre.
+     Não! Você escolhe entre o Básico (R$ 14,90) ou o Completo (R$ 29,90), paga uma única vez e o material é seu pra sempre.
     </div>
    </div>
 
@@ -1221,7 +1120,7 @@
      E se eu não gostar? <span class="faq-icon" aria-hidden="true">+</span>
     </button>
     <div class="faq-a">
-     Você tem garantia de 7 dias. É só nos chamar que devolvemos todo o seu dinheiro.
+     Você tem Garantia de 30 dias. É só nos chamar que devolvemos todo o seu dinheiro.
     </div>
    </div>
 
@@ -1232,9 +1131,9 @@
 <!-- ==================== CTA FINAL ==================== -->
 <section id="cta-final">
  <div class="container">
-  <h2>Da próxima vez que a birra começar, em vez do grito… uma historinha.</h2>
+  <h2>Uma historinha por dia. Uma lição pra vida toda.</h2>
   <div class="cta-wrap">
-   <a href="#planos" class="btn btn-primary btn-pulse" >📖 SIM! Quero minhas Parabolinhas →</a>
+   <a href="#planos" class="btn btn-primary btn-pulse">Sim, quero as Parabolinhas</a>
   </div>
  </div>
 </section>
@@ -1246,7 +1145,7 @@
   <span class="popup-badge">ESPERE! OFERTA EXCLUSIVA!</span>
   <h3 id="popup-title">🎁 Leve o PARABOLINHAS COMPLETO com todos os bônus por um precinho especial!</h3>
   <ul class="popup-features">
-   <li>Todas as 151 historinhas cristãs</li>
+   <li>Todas as 150 historinhas cristãs</li>
    <li>Pagamento Único</li>
   </ul>
   <ul class="popup-bonus">
@@ -1258,8 +1157,8 @@
    <div class="old">DE R$ 29,90</div>
    <div class="new">POR R$ 19,90</div>
   </div>
-  <a href="{{LINK_COMPLETO_PROMO}}" class="btn btn-primary btn-pulse" id="btn-popup-promo">🎁 Resgatar promoção →</a>
-  <button class="popup-skip" id="btn-basico-popup" onclick="goBasico()">Não, quero o de R$ 12,90</button>
+  <a href="{{LINK_COMPLETO_PROMO}}" class="btn btn-primary btn-pulse" id="btn-popup-promo">🎁 Resgatar promoção</a>
+  <button class="popup-skip" id="btn-basico-popup" onclick="goBasico()">Não, quero o de R$ 14,90</button>
  </div>
 </div>
 
@@ -1355,7 +1254,7 @@
   var expanded = btn.getAttribute('aria-expanded') === 'true';
   if (expanded) {
    hidden.style.display = 'none';
-   btn.textContent = 'Ver todos ▼';
+   btn.textContent = 'Ver todas ▼';
    btn.setAttribute('aria-expanded', 'false');
   } else {
    hidden.style.display = 'flex';
@@ -1406,7 +1305,7 @@
   }
  });
 
- // ── Smooth scroll for CTA → #planos ─────────────────────────────────────────
+ // ── Smooth scroll for CTA #planos ─────────────────────────────────────────
  document.querySelectorAll('a[href="#planos"]').forEach(function(a) {
   a.addEventListener('click', function(e) {
    e.preventDefault();
