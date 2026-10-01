@@ -4,10 +4,10 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>Parabolinhas: 150 historinhas cristãs pra educar sem gritar</title>
- <meta name="description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$14,90 no Pix. Acesso imediato." />
+ <meta name="description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$19,90 no Pix. Acesso imediato." />
  <!-- OG -->
  <meta property="og:title" content="Parabolinhas 150 historinhas cristãs pra educar sem gritar" />
- <meta property="og:description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$14,90 no Pix." />
+ <meta property="og:description" content="150 historinhas cristãs ilustradas em PDF pra lidar com birra, medo, mentira, desobediência e muito mais. A partir de R$19,90 no Pix." />
  <meta property="og:image" content="assets/img/birra.webp" />
  <meta property="og:type" content="website" />
  <!-- COLE AQUI O SCRIPT DO PIXEL / UTMIFY -->
@@ -60,7 +60,7 @@
   section:nth-child(even) { background: #FDEBD0; }
 
   /* ===== BUTTONS ===== */
-  .btn {
+  .btn { display: flex !important; margin: 0 auto !important; justify-content: center !important; text-align: center !important;
    display: inline-flex;
    align-items: center;
    justify-content: center;
@@ -99,10 +99,10 @@
   .btn-pulse { animation: pulse-green 2s ease-in-out infinite; }
 
   @media (min-width: 600px) {
-   .btn { width: auto; min-width: 260px; }
+   .btn { display: flex !important; margin: 0 auto !important; justify-content: center !important; text-align: center !important; width: auto; min-width: 260px; }
   }
 
-  .cta-wrap { margin-top: 32px; text-align: center; display: block; width: 100%; clear: both; }
+  .cta-wrap { margin-top: 32px; display: flex; justify-content: center; align-items: center; width: 100%; clear: both; }
   .lock-text { text-align: center; margin-top: 8px; font-size: 0.85rem; opacity: 0.7; }
 
   /* ===== MARQUEE ===== */
@@ -323,7 +323,7 @@
    mask-image: linear-gradient(to right, #000 85%, transparent 100%);
   }
   @media (min-width: 768px) {
-   .tabs-bar { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
+   .tabs-bar { flex-wrap: wrap; justify-content: center; -webkit-mask-image: none; mask-image: none; }
   }
   .tabs-bar::-webkit-scrollbar { display: none; }
   .tab-chip {
@@ -376,18 +376,36 @@
   .bonus-grid {
    display: grid;
    grid-template-columns: 1fr;
-   gap: 20px;
+   gap: 16px;
    margin-top: 32px;
   }
   @media (min-width: 768px) {
-   .bonus-grid { grid-template-columns: repeat(3, 1fr); }
+   .bonus-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   }
   .bonus-card {
    background: #FDEBD0;
    border-radius: 20px;
-   padding: 28px 24px;
+   padding: 20px 18px 22px;
    box-shadow: 0 2px 10px rgba(74,46,31,0.08);
    position: relative;
+   text-align: center;
+   max-width: 340px;
+   margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+   .bonus-card { padding: 24px; max-width: none; margin: 0; }
+  }
+  .bonus-card img {
+   max-width: 220px;
+   width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto 16px auto;
+   border-radius: 14px;
+   object-fit: contain;
+  }
+  @media (min-width: 768px) {
+   .bonus-card img { max-width: 240px; }
   }
   .bonus-seal {
    display: inline-block;
@@ -401,7 +419,12 @@
    letter-spacing: 0.06em;
   }
   .bonus-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
-  .bonus-card p { font-size: 0.92rem; }
+  .bonus-card p {
+   font-size: 0.92rem;
+   max-width: 30em;
+   margin: 0 auto;
+   line-height: 1.5;
+  }
   .bonus-tag {
    display: inline-block;
    margin-top: 12px;
@@ -457,7 +480,7 @@
    box-shadow: 0 4px 18px rgba(74,46,31,0.10);
    position: relative;
   }
-  .plan-card .btn { width: 100%; display: flex; justify-content: center; align-items: center; }
+  .plan-card .btn { display: flex !important; margin: 0 auto !important; justify-content: center !important; text-align: center !important; width: 100%; display: flex; justify-content: center; align-items: center; }
   .plan-card.featured {
    border: 3px solid #3F8F5B;
    background: #FFF6E6;
@@ -656,9 +679,9 @@
 <!-- ==================== MARQUEE ==================== -->
 <div class="marquee-outer" aria-hidden="true">
  <div class="marquee-track">
-  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
-  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
-  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$14,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$19,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$19,90 NO PIX •</span>
+  <span>150 HISTORINHAS CRISTÃS • VERSÍCULO + LIÇÃO DO DIA • PRA CASA, ESCOLINHA E IGREJA • LER NO CELULAR OU IMPRIMIR • PAGAMENTO ÚNICO • A PARTIR DE R$19,90 NO PIX •</span>
  </div>
 </div>
 
@@ -745,7 +768,7 @@
     <div class="cta-wrap">
      <a href="#planos" class="btn btn-primary btn-pulse" id="hero-cta">Quero as 150 historinhas</a>
     </div>
-    <p style="font-size: 13px; color: #6B5446; text-align: center; margin-top: 12px;">A partir de R$14,90 &middot; pagamento único &middot; chega no seu e-mail na hora</p>
+    <p style="font-size: 13px; color: #6B5446; text-align: center; margin-top: 12px;">A partir de R$19,90 &middot; pagamento único &middot; chega no seu e-mail na hora</p>
    </div>
   </div>
  </div>
@@ -756,7 +779,7 @@
  <div class="container">
   <h2>Criança não guarda sermão. Guarda história.</h2>
   <p style="margin-top:24px;">Foi assim que Jesus ensinava: por parábolas. As Parabolinhas fazem o mesmo, do tamanho de uma criança.</p><p style="margin-top:16px;">Em cada historinha, um bichinho passa por uma situação do dia a dia (dividir o brinquedo, falar a verdade, ter coragem no escuro) e descobre sozinho o caminho certo. No final vem um versículo e uma frase simples que a criança lembra e repete.</p><p style="margin-top:16px;">É só ler. Em 2 minutos a lição está dada, no colo antes de dormir ou na rodinha da escolinha.</p>
-  <div style="text-align:center; margin-top: 16px;"><span class="price-tag">A partir de R$14,90 no Pix</span></div>
+  <div style="text-align:center; margin-top: 16px;"><span class="price-tag">A partir de R$19,90 no Pix</span></div>
   <div class="cta-wrap">
    <a href="#planos" class="btn btn-primary">Quero as Parabolinhas</a>
   </div>
@@ -941,25 +964,35 @@
 <!-- ==================== BÔNUS ==================== -->
 <section id="bonus">
  <div class="container">
-  <h2>🎁 Bônus especiais do plano Completo</h2>
+  <h2>🎁 Bônus especiais inclusos hoje</h2>
   <div class="bonus-grid">
    <div class="bonus-card">
+    <img src="assets/img/bonus-30-noites.jpg" alt="Desafio 30 Noites com Jesus" />
     <span class="bonus-seal">BÔNUS 01</span>
-    <h3>Guia "Qual historinha ler hoje?"</h3>
-    <p>Todas as 150 historinhas organizadas por comportamento. Seu filho fez birra? Abre o guia e acha a história certa em segundos.</p>
-    <span class="bonus-tag">Grátis no Completo</span>
+    <h3>Desafio 30 Noites com Jesus</h3>
+    <p>Um calendário pronto com a historinha de cada noite, quadradinhos pra criança marcar e um certificado de "Pequeno Discípulo" no final.</p>
+    <span class="bonus-tag">Grátis hoje</span>
    </div>
    <div class="bonus-card">
+    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 02" />
     <span class="bonus-seal">BÔNUS 02</span>
-    <h3>Cards de Versículos pra Decorar</h3>
-    <p>Os versículos das historinhas em cartõezinhos pra imprimir, colar na geladeira e decorar em família.</p>
-    <span class="bonus-tag">Grátis no Completo</span>
+    <h3>Oraçõezinhas pro Dia a Dia</h3>
+    <p>30 orações curtinhas pra ensinar a criança a falar com Deus: ao acordar, antes de comer, antes da escola, antes de dormir e quando sentir medo.</p>
+    <span class="bonus-tag">Grátis hoje</span>
    </div>
    <div class="bonus-card">
+    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 03" />
     <span class="bonus-seal">BÔNUS 03</span>
-    <h3>Quadro de Recompensas Cristão</h3>
-    <p>Um quadro semanal pra imprimir, com missões simples (ajudar, agradecer, pedir desculpa) pra criança marcar cada conquista.</p>
-    <span class="bonus-tag">Grátis no Completo</span>
+    <h3>Aula Pronta pra Escolinha</h3>
+    <p>Um roteiro de 5 minutos pra usar qualquer historinha em grupo: abertura, leitura, 3 perguntinhas pra turma e oração final. Perfeito pra escola dominical, catequese e escolinha.</p>
+    <span class="bonus-tag">Grátis hoje</span>
+   </div>
+   <div class="bonus-card">
+    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 04" />
+    <span class="bonus-seal">BÔNUS 04</span>
+    <h3>Colorindo com Jesus</h3>
+    <p>[N] desenhos de Jesus pra imprimir e colorir depois da historinha.</p>
+    <span class="bonus-tag">Grátis hoje</span>
    </div>
   </div>
   <div class="cta-wrap">
@@ -996,43 +1029,29 @@
 <!-- ==================== PLANOS ==================== -->
 <section id="planos">
  <div class="container">
-  <h2>Escolha seu plano</h2>
+  <h2>Garanta suas 150 Parabolinhas</h2>
   <div class="plans-grid">
 
-   <!-- BÁSICO -->
-   <div class="plan-card">
-    <div class="plan-name">PARABOLINHAS BÁSICO</div>
-    <div class="plan-price"><span>R$</span> 14,90</div>
-    <ul class="plan-features">
-     <li>35 historinhas cristãs</li>
-     <li>Versículo + Lição do Dia</li>
-     <li>Acesso Imediato</li>
-     <li>Pagamento Único</li>
-    </ul>
-    <button class="btn btn-secondary" onclick="openPopup()" aria-haspopup="dialog">Quero esse!</button>
-    <p class="lock-text">🔒 Compra segura</p>
-   </div>
-
-   <!-- COMPLETO -->
-   <div class="plan-card featured">
-    <div class="plan-badge">⭐ MAIS POPULAR</div>
-    <div class="plan-name">PARABOLINHAS COMPLETO</div>
-    <div class="plan-price"><span>R$</span> 29,90</div>
+   <!-- ÚNICO -->
+   <div class="plan-card featured" style="max-width: 500px; margin: 0 auto;">
+    <div class="plan-badge">ACESSA AGORA</div>
+    <div class="plan-name">ACESSO VITALÍCIO</div>
+    <div class="plan-price"><span>R$</span> 19,90</div>
     <ul class="plan-features">
      <li>Todas as 150 historinhas cristãs</li>
      <li>Versículo + Lição do Dia</li>
      <li>Historinhas com Missão Kids e Oração</li>
-     <li>Acesso Imediato</li>
-     <li>Pagamento Único</li>
+     <li>Acesso Imediato pelo E-mail</li>
+     <li>Pagamento Único (Sem Mensalidade)</li>
     </ul>
-    <p class="plan-bonus-title">🎁 BÔNUS EXCLUSIVOS:</p>
+    <p class="plan-bonus-title">🎁 BÔNUS INCLUSOS:</p>
     <ul class="plan-bonus-list">
-     <li>Guia "Qual historinha ler hoje?"</li>
-     <li>Cards de Versículos pra Decorar</li>
-     <li>Quadro de Recompensas Cristão</li>
+     <li>Desafio 30 Noites com Jesus</li>
+     <li>Oraçõezinhas pro Dia a Dia</li>
+     <li>Aula Pronta pra Escolinha</li>
+     <li>Colorindo com Jesus</li>
     </ul>
-    <a href="{{LINK_COMPLETO}}" class="btn btn-primary btn-pulse" id="btn-completo">📖 Quero tudo</a>
-    <p class="micro">São 116 historinhas a mais + 3 bônus por só R$17 de diferença.</p>
+    <a href="{{LINK_CHECKOUT}}" class="btn btn-primary btn-pulse" style="font-size: 1.1rem; padding: 16px;">📖 Quero as 150 Historinhas</a>
     <p class="lock-text">🔒 Compra segura</p>
    </div>
 
@@ -1102,7 +1121,7 @@
      Tem mensalidade? <span class="faq-icon" aria-hidden="true">+</span>
     </button>
     <div class="faq-a">
-     Não! Você escolhe entre o Básico (R$ 14,90) ou o Completo (R$ 29,90), paga uma única vez e o material é seu pra sempre.
+     Não! Você paga apenas uma vez o valor de R$ 19,90 e tem acesso vitalício a todo o material. Não há nenhuma mensalidade.
     </div>
    </div>
 
@@ -1138,107 +1157,34 @@
  </div>
 </section>
 
-<!-- ==================== POPUP DOWNSELL ==================== -->
-<div id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title" onclick="closePopupOnOverlay(event)">
- <div class="popup-box">
-  <button class="popup-close" aria-label="Fechar popup" onclick="closePopup()">&#x2715;</button>
-  <span class="popup-badge">ESPERE! OFERTA EXCLUSIVA!</span>
-  <h3 id="popup-title">🎁 Leve o PARABOLINHAS COMPLETO com todos os bônus por um precinho especial!</h3>
-  <ul class="popup-features">
-   <li>Todas as 150 historinhas cristãs</li>
-   <li>Pagamento Único</li>
-  </ul>
-  <ul class="popup-bonus">
-   <li>Guia "Qual historinha ler hoje?"</li>
-   <li>Cards de Versículos pra Decorar</li>
-   <li>Quadro de Recompensas Cristão</li>
-  </ul>
-  <div class="popup-price">
-   <div class="old">DE R$ 29,90</div>
-   <div class="new">POR R$ 19,90</div>
-  </div>
-  <a href="{{LINK_COMPLETO_PROMO}}" class="btn btn-primary btn-pulse" id="btn-popup-promo">🎁 Resgatar promoção</a>
-  <button class="popup-skip" id="btn-basico-popup" onclick="goBasico()">Não, quero o de R$ 14,90</button>
- </div>
-</div>
-
-<!-- ==================== RODAPÉ ==================== -->
-<footer>
- <p><strong>PARABOLINHAS</strong></p>
- <p>Parabolinhas © 2026 - Todos os direitos reservados.</p>
- <p>Este site não faz parte e não tem afiliação com o Facebook ou o Google.</p>
- <p style="margin-top:8px;"><a href="https://wa.me/5562982591657?text=Oi%21+Tenho+uma+d%C3%BAvida+sobre+as+Parabolinhas" target="_blank" rel="noopener">Suporte via WhatsApp</a></p>
-</footer>
-
-<!-- ==================== WHATSAPP FLOAT ==================== -->
-<a class="wa-float" href="https://wa.me/5562982591657?text=Oi%21+Tenho+uma+d%C3%BAvida+sobre+as+Parabolinhas" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
-  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
- </svg>
- <span class="wa-text">Oi! Tenho uma dúvida</span>
-</a>
-
-<!-- ==================== JS ==================== -->
 <script>
-(function() {
- // ── UTM passthrough ──────────────────────────────────────────────────────────
- function buildCheckoutUrl(base) {
-  var search = window.location.search;
-  if (!search) return base;
-  var sep = base.includes('?') ? '&' : '?';
-  return base + sep + search.slice(1);
- }
-
- function applyUtm(el) {
-  var href = el.getAttribute('href');
-  if (href && href.startsWith('{{')) return; // placeholder not replaced
-  if (href && (href.startsWith('http') || href.startsWith('//'))) {
-   el.setAttribute('href', buildCheckoutUrl(href));
-  }
- }
-
- document.querySelectorAll('a[href]').forEach(applyUtm);
-
- // popup buttons also need UTM
- function updatePopupLinks() {
-  document.querySelectorAll('#popup-overlay a[href], #popup-overlay button').forEach(function(el) {
-   if (el.tagName === 'A') applyUtm(el);
-  });
- }
- updatePopupLinks();
-
- // ── Carousel ────────────────────────────────────────────────────────────────
- window.scrollCarousel = function(dir) {
-  var c = document.getElementById('main-carousel');
-  c.scrollBy({ left: dir * 220, behavior: 'smooth' });
- };
-
- // ── Lightbox ─────────────────────────────────────────────────────────────────
- window.openLightbox = function(src, alt) {
+ // ── Lightbox ──────────────────────────────────────────────────────────────────
+ function openLightbox(src, text) {
   var lb = document.getElementById('lightbox');
   var img = document.getElementById('lightbox-img');
+  var p = document.getElementById('lightbox-text');
+  if(!lb || !img) return;
   img.src = src;
-  img.alt = alt || '';
-  lb.classList.add('open');
-  lb.focus();
- };
- window.closeLightbox = function() {
-  document.getElementById('lightbox').classList.remove('open');
- };
- window.closeLightboxOnOverlay = function(e) {
-  if (e.target === document.getElementById('lightbox')) closeLightbox();
- };
+  if(p) p.textContent = text;
+  lb.style.display = 'flex';
+ }
+ function closeLightbox() {
+  var lb = document.getElementById('lightbox');
+  if(lb) lb.style.display = 'none';
+ }
 
- // ── Tabs ─────────────────────────────────────────────────────────────────────
+ // ── Tabs ──────────────────────────────────────────────────────────────────────
  document.querySelectorAll('.tab-chip').forEach(function(chip) {
   chip.addEventListener('click', function() {
    var tab = this.dataset.tab;
+   if(!tab) return;
    document.querySelectorAll('.tab-chip').forEach(function(c) {
     c.classList.remove('active');
     c.setAttribute('aria-selected', 'false');
    });
    this.classList.add('active');
    this.setAttribute('aria-selected', 'true');
+   
    document.querySelectorAll('.tab-panel').forEach(function(p) {
     p.classList.remove('active');
    });
@@ -1247,10 +1193,11 @@
   });
  });
 
- // ── Expand "Ver todos" ──────────────────────────────────────────────────────
+ // ── Expand "Ver todos" ────────────────────────────────────────────────────────
  window.toggleExpand = function() {
   var hidden = document.getElementById('todos-hidden');
   var btn = document.getElementById('expand-btn');
+  if(!hidden || !btn) return;
   var expanded = btn.getAttribute('aria-expanded') === 'true';
   if (expanded) {
    hidden.style.display = 'none';
@@ -1263,58 +1210,24 @@
   }
  };
 
- // ── FAQ Accordion ────────────────────────────────────────────────────────────
+ // ── FAQ Accordion ─────────────────────────────────────────────────────────────
  document.querySelectorAll('.faq-q').forEach(function(btn) {
   btn.addEventListener('click', function() {
-   var item = this.closest('.faq-item');
-   var isOpen = item.classList.contains('open');
-   // close all
+   var item = this.parentElement;
+   var isActive = item.classList.contains('open');
+   
    document.querySelectorAll('.faq-item').forEach(function(i) {
     i.classList.remove('open');
-    i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    var q = i.querySelector('.faq-q');
+    if(q) q.setAttribute('aria-expanded', 'false');
    });
-   if (!isOpen) {
+   
+   if (!isActive) {
     item.classList.add('open');
     this.setAttribute('aria-expanded', 'true');
    }
   });
  });
-
- // ── Popup ────────────────────────────────────────────────────────────────────
- window.openPopup = function() {
-  var overlay = document.getElementById('popup-overlay');
-  overlay.classList.add('open');
-  overlay.querySelector('.popup-close').focus();
- };
- window.closePopup = function() {
-  document.getElementById('popup-overlay').classList.remove('open');
- };
- window.closePopupOnOverlay = function(e) {
-  if (e.target === document.getElementById('popup-overlay')) closePopup();
- };
- window.goBasico = function() {
-  var base = '{{LINK_BASICO}}';
-  window.location.href = buildCheckoutUrl(base);
- };
-
- // ── ESC closes modals ────────────────────────────────────────────────────────
- document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-   closeLightbox();
-   closePopup();
-  }
- });
-
- // ── Smooth scroll for CTA #planos ─────────────────────────────────────────
- document.querySelectorAll('a[href="#planos"]').forEach(function(a) {
-  a.addEventListener('click', function(e) {
-   e.preventDefault();
-   var target = document.getElementById('planos');
-   if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
- });
-
-})();
 </script>
 </body>
 </html>
