@@ -108,7 +108,7 @@
   /* ===== MARQUEE ===== */
   .marquee-outer {
    background: #7A4A2A;
-   color: #FFF6E6;
+   color: #7A4A2A;
    overflow: hidden;
    white-space: nowrap;
    padding: 10px 0;
@@ -522,9 +522,7 @@
    gap: 28px;
    text-align: center;
   }
-  @media (min-width: 600px) {
-   .garantia-inner { flex-direction: row; text-align: left; }
-  }
+
   .guarantee-seal-img {
    flex-shrink: 0;
    width: 150px;
@@ -532,7 +530,7 @@
    object-fit: contain;
    mix-blend-mode: multiply; /* removes white background if the image has any */
   }
-  .garantia-text h2 { text-align: left; }
+  
 
   /* ===== FAQ ===== */
   #faq { background: #FFF6E6; }
@@ -568,9 +566,12 @@
   }
   .faq-item.open .faq-a { max-height: 300px; padding: 16px 20px; }
 
+    /* ===== CTA FINAL & FOOTER WRAPPER ===== */
+  .footer-cta-wrapper {
+   background: linear-gradient(180deg, #7A4A2A 0%, #6A3F24 45%, #3E271A 100%);
+  }
   /* ===== CTA FINAL ===== */
-  #cta-final {
-   background: #7A4A2A;
+  #cta-final { background: #7A4A2A;
    text-align: center;
    padding: 72px 16px;
   }
@@ -631,16 +632,16 @@
   .popup-skip { display: block; margin-top: 14px; font-size: 0.88rem; color: #7A4A2A; text-decoration: underline; cursor: pointer; background: none; border: none; width: 100%; }
   .popup-skip:focus { outline: 2px solid #3F8F5B; }
 
-  /* ===== FOOTER ===== */
+    /* ===== FOOTER ===== */
   footer {
-   background: #4A2E1F;
-   color: #FFF6E6;
+   background: transparent;
+   border-top: none;
    text-align: center;
    padding: 28px 16px;
    font-size: 0.85rem;
    line-height: 1.8;
   }
-  footer a { color: #F3B562; text-decoration: underline; }
+  footer a { color: #3F8F5B; text-decoration: underline; }
 
   /* ===== WHATSAPP FLOAT ===== */
   .wa-float {
@@ -974,24 +975,24 @@
     <span class="bonus-tag">Grátis hoje</span>
    </div>
    <div class="bonus-card">
-    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 02" />
+    <img src="assets/img/bonus-oracoes.jpg" alt="Bônus 02" />
     <span class="bonus-seal">BÔNUS 02</span>
     <h3>Oraçõezinhas pro Dia a Dia</h3>
     <p>30 orações curtinhas pra ensinar a criança a falar com Deus: ao acordar, antes de comer, antes da escola, antes de dormir e quando sentir medo.</p>
     <span class="bonus-tag">Grátis hoje</span>
    </div>
    <div class="bonus-card">
-    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 03" />
+    <img src="assets/img/bonus-aula.jpg" alt="Bônus 03" />
     <span class="bonus-seal">BÔNUS 03</span>
     <h3>Aula Pronta pra Escolinha</h3>
     <p>Um roteiro de 5 minutos pra usar qualquer historinha em grupo: abertura, leitura, 3 perguntinhas pra turma e oração final. Perfeito pra escola dominical, catequese e escolinha.</p>
     <span class="bonus-tag">Grátis hoje</span>
    </div>
    <div class="bonus-card">
-    <img src="assets/img/bonus-30-noites.jpg" alt="Bônus 04" />
+    <img src="assets/img/bonus-colorindo.jpg" alt="Bônus 04" />
     <span class="bonus-seal">BÔNUS 04</span>
     <h3>Colorindo com Jesus</h3>
-    <p>[N] desenhos de Jesus pra imprimir e colorir depois da historinha.</p>
+    <p>120 desenhos de Jesus pra imprimir e colorir depois da historinha.</p>
     <span class="bonus-tag">Grátis hoje</span>
    </div>
   </div>
@@ -1065,7 +1066,7 @@
   <div class="garantia-inner">
    <img src="assets/img/selo-garantia.png" alt="Garantia de 30 Dias" class="guarantee-seal-img" />
    <div class="garantia-text">
-    <h2 style="text-align:left;">Garantia de 30 dias</h2>
+    <h2>Garantia de 30 dias</h2>
     <p style="margin-top:14px;">
      Temos total confiança nas Parabolinhas. Se por qualquer motivo você não gostar, é só chamar no WhatsApp ou mandar um e-mail em até 30 dias que devolvemos 100% do seu dinheiro, sem perguntas!
     </p>
@@ -1147,15 +1148,35 @@
  </div>
 </section>
 
-<!-- ==================== CTA FINAL ==================== -->
-<section id="cta-final">
- <div class="container">
-  <h2>Uma historinha por dia. Uma lição pra vida toda.</h2>
-  <div class="cta-wrap">
-   <a href="#planos" class="btn btn-primary btn-pulse">Sim, quero as Parabolinhas</a>
+<!-- ==================== CTA FINAL & FOOTER ==================== -->
+<div class="footer-cta-wrapper">
+ <section id="cta-final">
+  <div class="container">
+   <h2 style="color: #FFF6E6 !important;">Uma historinha por dia. Uma lição pra vida toda.</h2>
+   <p style="color: #FFF6E6; font-size: 1.05rem; text-align: center; margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">150 historinhas cristãs com versículo e lição do dia, pra ler em casa, na escolinha ou na igreja.</p>
+   <div class="cta-wrap">
+    <a href="#planos" class="btn btn-primary btn-pulse">Sim, quero as Parabolinhas</a>
+   </div>
+   <p style="font-size: 13px; color: rgba(255, 246, 230, 0.85); text-align: center; margin-top: 16px;">🔒 Compra segura  &bull;  Acesso imediato  &bull;  Garantia de 30 dias</p>
   </div>
- </div>
-</section>
+ </section>
+
+ 
+
+ <footer>
+  <div class="container">
+   <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; color: #7A4A2A;">PARABOLINHAS</p>
+   <p style="margin-bottom: 24px; color: #6B5446;">Historinhas cristãs que ensinam valores do jeito que criança entende.</p>
+   <p style="margin-bottom: 16px; color: #6B5446;">Pagamento único via Pix  &bull;  Entrega imediata por <span style="white-space: nowrap;">e-mail</span>  &bull;  Garantia de 30 dias</p>
+   <p style="margin-bottom: 24px;"><a href="{{LINK_WPP}}" target="_blank">Suporte via WhatsApp</a></p>
+   <p style="font-size: 12px; color: #9A8170;">&copy; 2026 Parabolinhas. Todos os direitos reservados.<br>Este site não faz parte do Facebook, Instagram, Google ou Meta Platforms, Inc., nem é endossado por eles.</p>
+  </div>
+ </footer>
+</div>
+
+<a href="{{LINK_WPP}}" class="wa-float" target="_blank" aria-label="Falar no WhatsApp">
+ <svg width="28" height="28" fill="#fff" viewBox="0 0 24 24"><path d="M12.01 2.01A10 10 0 002 12c0 1.77.46 3.44 1.28 4.9L2 22l5.22-1.25A9.95 9.95 0 0012.01 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.33c-1.52 0-3.02-.39-4.34-1.12l-.31-.18-3.14.75.76-3.06-.2-.33A8.34 8.34 0 013.67 12c0-4.6 3.74-8.34 8.34-8.34 4.6 0 8.34 3.74 8.34 8.34 0 4.6-3.74 8.34-8.34 8.34zm4.58-6.2c-.25-.13-1.49-.74-1.72-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8 1-.15.17-.3.19-.55.06-1.1-.48-2.3-1.35-3.14-2.52-.22-.3-.02-.45.1-.57.11-.12.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.78-1.89-.2-.5-.41-.43-.57-.44h-.48c-.17 0-.44-.06-.67.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.02 2.6.13.17 1.78 2.72 4.3 3.82.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.06 1.49-.61 1.7-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.15-.48-.28z"/></svg>
+</a>
 
 <script>
  // ── Lightbox ──────────────────────────────────────────────────────────────────
